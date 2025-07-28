@@ -109,8 +109,11 @@
     "name": "Kisne",
     "role": "In charge of trivia and hypers",
     "desc": "I am just a lil' excitable guy. :3",
-    "image": "images/template.png"
-     },
+    "image": [
+    "images/Kisne1.png",
+    "images/Kisne2.png"
+             ]
+  },
      {
     "name": "S'kalkaya Rain",
     "role": "Courtesan",
