@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIP Packages | Neon Neko</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../nnfavicon.ico">
+  <style>
+    :root {
+      --vip-gold: #FFD700;
+      --vip-bg: #0a0a0a;
+    }
+
+    body {
+      background-color: var(--vip-bg);
+      color: var(--vip-gold);
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: center;
+      padding-top: 2rem;
+    }
+
+    #main-nav a[href="vip/vip.html"],
+    #main-nav a[href="../vip/vip.html"] {
+      background: var(--vip-gold);
+      color: black;
+      border-color: var(--vip-gold);
+      box-shadow: 0 0 10px var(--vip-gold);
+    }
+
+    .vip-section {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 2px solid var(--vip-gold);
+      border-radius: 16px;
+      box-shadow: 0 0 20px var(--vip-gold);
+    }
+
+    .vip-section h2 {
+      color: var(--vip-gold);
+      font-size: 2.75rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .vip-section p {
+      color: #eee;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+
+    .vip-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--vip-gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px var(--vip-gold);
+    }
+
+    .vip-card h3 {
+      font-size: 1.7rem;
+      margin-bottom: 0.75rem;
+      color: var(--vip-gold);
+    }
+
+    .vip-card ul {
+      padding-left: 1rem;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .vip-card ul li::marker {
+      color: var(--vip-gold);
+    }
+    #vip-contributors ul {
+  padding-left: 1.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+#vip-contributors ul li::marker {
+  color: var(--vip-gold);
+}
+
+  </style>
+</head>
+<body>
+  <div class="nav-wrapper">
+    <nav id="main-nav" class="visible">
+      <a href="../index.html#home">Home</a>
+      <a href="../info.html">Venue Details</a>
+      <a href="../staff.html">Team & Services</a>
+      <a href="../index.html#menu">Menu</a>
+      <a href="vip.html" class="active">💎 VIP Packages</a>
+      <a href="../index.html#apply">Apply Now!</a>
+  </nav>
+  </div>
+
+  <section class="vip-section">
+    <h2>💎 VIP Packages</h2>
+    <p>Each tier grants access to all perks of the lower tiers. The higher you go, the more exclusive the experience.</p>
+
+    <div class="vip-card">
+      <h3>🌙 Nightly VIP – 200k</h3>
+      <ul>
+        <li>Access to VIP area</li>
+        <li>5 free shots from the bar</li>
+      </ul>
+    </div>
+
+    <div class="vip-card">
+      <h3>📅 Monthly VIP – 2M</h3>
+      <ul>
+        <li>Everything in Nightly VIP</li>
+        <li>Access to VIP area +1 guest</li>
+        <li>Max bet at gamba table: <strong>2M</strong></li>
+        <li>Discord VIP role</li>
+        <li>1 free GPOSER shoot per month <small>(if available)</small></li>
+      </ul>
+    </div>
+
+    <div class="vip-card">
+      <h3>📆 Yearly VIP – 24M</h3>
+      <ul>
+        <li>Everything in Monthly VIP</li>
+        <li>Access to VIP area +3 guests</li>
+        <li>Priority gamba waitlist</li>
+        <li>1 GPOSER shoot per opening <small>(if available)</small></li>
+        <li>30 min free with a Court per month <small>(Court opt-in)</small></li>
+        <li>10% discount on all raffle tickets</li>
+      </ul>
+    </div>
+
+    <div class="vip-card">
+      <h3>👑 Lifetime VIP – 50M</h3>
+      <ul>
+        <li>Everything in Yearly VIP</li>
+        <li>Access to VIP area +5 guests</li>
+        <li>Free drinks from the bar</li>
+        <li>Max bet at gamba table: <strong>3M</strong></li>
+        <li>Photobooth priority each opening</li>
+        <li>1 hour free with a Court per month <small>(Court opt-in)</small></li>
+        <li>Your name listed on the Carrd as a contributor</li>
+        <li>20% discount on all raffle tickets</li>
+        <li>Early signups for raffles & DR Tournaments</li>
+      </ul>
+    </div>
+    <div class="vip-card" id="vip-contributors">
+  <h3>🎉 Lifetime VIP Contributors</h3>
+  <ul id="contributorList">
+    <li>Loading...</li>
+  </ul>
+</div>
+</section>
+<script src="vip.js"></script>
+</body>
+</html>
