@@ -6,7 +6,7 @@
     "image": [
     "images/Kiera1.png",
     "images/Kiera2.png"
-            ]
+  ]
   },
   {
     "name": "Nilah Valoryn",
@@ -22,7 +22,7 @@
     "images/Sonja.jpg",
     "images/Sonja2.png",
     "images/Sonja3.png"
-             ]
+  ]
   },
   {
     "name": "Shinobu Hagane",
@@ -43,7 +43,7 @@
     "image": [
     "images/Solas1.png",
     "images/Solas2.png"
-             ]
+  ]
   },
   {
     "name": "Morri Bloodmorr",
@@ -54,7 +54,7 @@
     "images/Morri.png",
     "images/Morri1.png",
     "images/Morri3.png"
-             ]
+  ]
   },
   {
     "name": "Scarleta Valkyrie",
@@ -69,58 +69,47 @@
     "image": [
     "images/Amethyst.png",
     "images/Amethyst2.png"
-            ]
+  ]
   },
   {
   "name": "Naemona Anemone",
-  "role": "Courtesan Manager",
-  "desc": "Sah dooed, I'm Nae. Professional thot. I like Pho, I like weed, and I like being an utterly shameless hoe. ",
+  "role": "Dancer",
+  "desc": "Coming soon!",
   "image": [
     "images/naemona1.png",
     "images/naemona2.png",
-    "images/naemona3.png",
-    "images/naemona4.png"
-            ]
-    },
-    {
+    "images/naemona3.png"
+  ]
+},
+  {
     "name": "Kyoki Hagane",
     "role": "Exists",
     "desc": "An upcoming DJ",
     "image": "images/Kyo.png"
-    },
-    {
+  },
+  {
+    "name": "Arin D'vere",
+    "role": "Dancer",
+    "desc": "Hi everyone, I’m Arin! Dancer, entertainer, chitchat fanatic, and expert procrastinator. Whoever’s reading this, I’d love to get to know you better—and in return, I promise I’ll make your night a little more brighter!",
+    "image": [
+    "images/Arin.png",
+    "images/arin2.png",
+    "images/arin3.png"
+  ]
+  },
+  {
+    "name": "Danielle Racine",
+    "role": "Dancer",
+    "desc": "Hi out to everyone!  I just your normal transgirl who loves to pose, talk and from time to time flirt. (If from time to time means most of the time)  I love meeting new people and understanding what really makes them tick, and then if I use that information to my advantage then what's the harm right?",
+    "image": "images/Danielle.png"
+  },
+  {
     "name": "Alys Noxhart",
     "role": "Bartender",
     "desc": "Need a drink?  Let me make you one and more while joining your journey of drunkenness. If not drinking and making them for patrons, I love to move to the music and enjoy the sweet flavors of information that passes in the shadows. Give me something just as sweet and you'll be given a reward.",
     "image": [
     "images/alys1.png",
     "images/alys2.png"
-             ]
-    },
-    {
-    "name": "Yishi Lalni",
-    "role": "VIP Manager",
-    "desc": "Yishi is a smart woman, but can often play the dumb blonde. She enjoys fighting and challenging herself, while also relaxing and having fun with much the same enthusiasm.  Yishi is naturally flirty, loves to dance, and can be quite hedonistic at times.  Given her demeanor, this woman typically takes charge with those who are less than sure of what they want.. but she does greatly enjoy people who know what they want out of life.",
-    "image": [
-    "images/Yishi1.png"
-             ]
-    },
-    {
-    "name": "Kisne",
-    "role": "In charge of trivia and hypers",
-    "desc": "I am just a lil' excitable guy. :3",
-    "image": "images/template.png"
-     },
-     {
-    "name": "S'kalkaya Rain",
-    "role": "Courtesan",
-    "desc": "Heya I'm Kay, the tall rava muscle mommy of your dreams~! I'm an outgoing person and an absolute party animal, flirty and tall, you're more than welcome to stare at me :3 Treat her well and she'll treat you well in kind~",
-    "image": "images/S'kalkaya1.png"
-     },
-     {
-    "name": "Evee",
-    "role": "Courtesan",
-    "desc": "coming soon",
-    "image": "images/Eve1.png"
+  ]
   }
 ]
