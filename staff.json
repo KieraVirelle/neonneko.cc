@@ -113,7 +113,7 @@
     "images/Kisne1.png",
     "images/Kisne2.png"
              ]
-  },
+     },
      {
     "name": "S'kalkaya Rain",
     "role": "Courtesan",
@@ -125,5 +125,19 @@
     "role": "Courtesan",
     "desc": "coming soon",
     "image": "images/Eve1.png"
-  }
+    },  
+    {
+    "name": "Wilah",
+    "role": "Dancer",
+    "desc": "coming soon",
+    "image": ["images/Wilah1.png",
+              "images/Wilah2.png"
+              ]
+    },  
+    {
+    "name": "Izumi",
+    "role": "Hype Squad",
+    "desc": "coming soon",
+    "image": "images/Izumi1.png"
+    }
 ]
