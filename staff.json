@@ -139,5 +139,11 @@
     "role": "Hype Squad",
     "desc": "coming soon",
     "image": "images/Izumi1.png"
+    },
+    {
+      "name" : "Celeste Chantra",
+      "role" : "Dancer",
+      "desc" : "coming soon",
+      "image": "images/template.png"  
     }
 ]
