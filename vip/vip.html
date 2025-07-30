@@ -10,7 +10,8 @@
   <style>
     :root {
       --vip-gold: #FFD700;
-      --vip-bg: #0a0a0a;
+      /* Use the same deep background as the rest of the site for the VIP page */
+      --vip-bg: #0b0b1b;
     }
 
     body {
@@ -39,7 +40,8 @@
       max-width: 960px;
       margin: 3rem auto;
       padding: 2rem;
-      background: rgba(255, 255, 255, 0.02);
+      /* Keep the interior of the VIP block a solid black matching the site background */
+      background: var(--vip-bg);
       border: 2px solid var(--vip-gold);
       border-radius: 16px;
       box-shadow: 0 0 20px var(--vip-gold);
@@ -61,7 +63,8 @@
     }
 
     .vip-card {
-      background: rgba(255, 255, 255, 0.04);
+      /* Use a solid dark background for each VIP tier card to match the VIP section */
+      background: var(--vip-bg);
       border: 1px solid var(--vip-gold);
       border-radius: 12px;
       padding: 1.5rem;
