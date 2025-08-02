@@ -1,5 +1,3 @@
-
- <canvas id="neonCanvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:9999;"></canvas>
 const canvas = document.getElementById("neonCanvas");
   const ctx = canvas.getContext("2d");
   canvas.width = window.innerWidth;
