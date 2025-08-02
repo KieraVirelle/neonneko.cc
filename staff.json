@@ -125,7 +125,7 @@
     {
     "name": "Wilah",
     "role": "Dancer",
-    "desc": "coming soon",
+    "desc": "Hi there! I'm Wilah (pronounced Will- Ah). Just a purple cat girl looking for a good time and good conversation! I love gposing, reading, Deathrolling, yapping, hanging out with all you lovely people, and cat naps. Come find me out on the dancefloor and ask for a dance",
     "image": ["images/Wilah1.png",
               "images/Wilah2.png"
               ]
@@ -140,7 +140,8 @@
       "name" : "Celeste Chantra",
       "role" : "Dancer",
       "desc" : "She is the kitten with the cotton candy hair and a personality that's just as sweet, a free spirit who seeks out fun and new experiences in everything she does.  She is a playful kitten that loves to converse and is an avid lover of RP in all its forms.",
-      "image": ["images/Celeste1.png",
+      "image": ["images/Celeste5.png",
+                "images/Celeste1.png",
                 "images/Celeste2.png",
                 "images/Celeste3.png",
                 "images/Celeste4.png"   
@@ -149,7 +150,7 @@
      {
       "name" : "Clout Strife",
       "role" : "Ampurr",
-      "desc" : "coming soon",
+      "desc" : " Your average everyday Bunboi who loves robot model kits",
       "image": ["images/Clout1.png"
                 ]  
     }
