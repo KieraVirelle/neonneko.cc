@@ -12,7 +12,10 @@
     "name": "Nilah Valoryn",
     "role": "Owner",
     "desc": "Technomancer behind the scenes, Nilah makes the magic happen—plugins, pixels, and purrs.",
-    "image": "images/Nilah.png"
+    "image": [
+            "images/Nilah2.png",
+            "images/Nilah1.png"
+            ]
   },
   {
     "name": "Sonja Golmarr",
