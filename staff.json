@@ -156,5 +156,12 @@
       "desc" : " Your average everyday Bunboi who loves robot model kits",
       "image": ["images/Clout1.png"
                 ]  
+    },
+     {
+      "name" : "Yuki Deathmoth",
+      "role" : "GPOSER",
+      "desc" : "Your non-local edgy gpose",
+      "image": ["images/YukiDeathMoth1.png"
+                ]  
     }
 ]
