@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Neko Staff</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      font-size: 2.4rem;
+      color: var(--neon-pink);
+      text-shadow: 0 0 8px var(--neon-pink);
+      margin-bottom: 1rem;
+    }
+    .subtext {
+      color: #aaa;
+      margin-bottom: 2rem;
+    }
+
+    /* grid */
+    .staff-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+    }
+
+    /* cards */
+    .staff-card {
+      border: 2px solid var(--neon-pink);
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--panel-bg);
+      box-shadow: 0 0 10px var(--neon-blue);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .staff-card:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 20px var(--neon-pink);
+    }
+    .staff-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+    .staff-name {
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.5rem;
+      background: var(--panel-bg);
+      color: var(--neon-blue);
+    }
+
+    /* detail panel */
+    .staff-detail {
+      display: none;
+      max-width: 700px;
+      margin: 0 auto;
+      border: 2px solid var(--neon-blue);
+      border-radius: 16px;
+      padding: 2rem;
+      background: var(--panel-bg);
+      box-shadow: 0 0 15px var(--neon-blue);
+      animation: fadeIn 0.3s ease forwards;
+    }
+    .staff-detail.active {
+      display: block;
+    }
+    .staff-detail h2 {
+      color: var(--neon-pink);
+      margin-bottom: 0.25rem;
+    }
+    .staff-detail .role {
+      font-weight: bold;
+      color: var(--neon-blue);
+      margin-bottom: 1rem;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <h1>Meet the Neon Neko Team</h1>
+  <p class="subtext">Click a member to view their profile</p>
+
+  <div class="staff-grid" id="staffGrid"></div>
+
+  <div class="staff-detail" id="staffDetail">
+    <h2 id="detailName"></h2>
+    <div class="role" id="detailRole"></div>
+    <p id="detailDesc"></p>
+  </div>
+
+  <script>
+    fetch('staff.json')
+      .then(res => res.json())
+      .then(staffList => {
+        const grid = document.getElementById('staffGrid');
+        const detail = document.getElementById('staffDetail');
+        const nameEl = document.getElementById('detailName');
+        const roleEl = document.getElementById('detailRole');
+        const descEl = document.getElementById('detailDesc');
+
+        function pickImage(src) {
+          if (!src) return '';
+          if (Array.isArray(src)) return src[0]; // just grab the first if array
+          return src;
+        }
+
+        staffList.forEach(staff => {
+          const card = document.createElement('div');
+          card.className = 'staff-card';
+          card.innerHTML = `
+            <img src="${pickImage(staff.image)}" alt="${staff.name}">
+            <div class="staff-name">${staff.name}</div>
+          `;
+          card.addEventListener('click', () => {
+            nameEl.textContent = staff.name;
+            roleEl.textContent = staff.role;
+            descEl.textContent = staff.desc;
+            detail.classList.add('active');
+            detail.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          });
+          grid.appendChild(card);
+        });
+      });
+  </script>
+</body>
+</html>
