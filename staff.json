@@ -146,13 +146,6 @@
       "image": ["images/Clout1.png"
                 ]  
     },
-     {
-      "name" : "Yuki Deathmoth",
-      "role" : "GPOSER",
-      "desc" : "Your non-local edgy gpose",
-      "image": ["images/YukiDeathMoth1.png"
-                ]  
-    },
     {
       "name" : "Jennafyre Morrigan",
       "role" : "Courtesan",
