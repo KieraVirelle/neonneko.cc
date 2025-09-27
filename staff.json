@@ -142,10 +142,44 @@
      {
       "name" : "Clout Strife",
       "role" : "Ampurr",
-      "desc" : " Your average everyday Bunboi who loves robot model kits",
+      "desc" : "Your average everyday Bunboi who loves robot model kits",
       "image": ["images/Clout1.png"
                 ]  
-    }
-    
-    
+    },
+        {
+      "name" : "Wade Howlett",
+      "role" : "Courtesan",
+      "desc" : "The Merc With a Mouth FFXIV style! Wade is witty and talkative, and loves letting others know just how he's feeling. He's not afraid to compliment, but he's not afraid to whine either. He's precious and has a big heart, but he's also hyper-aware of certain... things.",
+      "image": ["images/wade1.png",
+                "images/wade2.png"  
+                ]  
+      },
+              {
+      "name" : "Clove Adori",
+      "role" : "GPOSER",
+      "desc" : "Whether I’m wagging my tail for a new gpose idea or just curling up for something soft and sweet, I bring playful energy to everything I create. Always excited to share my work and meet new friends along the way!",
+      "image": ["images/clove1.png"
+                ]  
+      },
+    {
+      "name" : "Gils'justwana Hav'bun",
+      "role" : "Courtesan",
+      "desc" : "Gils is a lithe Viera with an easy smile and a penchant for excitement. She adores talking to new people, hearing about their adventures, and perhaps taking them on a new one! It's a rough world out there, but you can lose yourself in her amethyst eyes and let your worries fall away. Or bring a friend and get a bun to share! Out of coffee? Let Gils keep you company this evening as she'll find a way to keep you awake!",
+      "image": ["images/gils1.png"
+              ]  
+      },
+      {
+      "name" : "Bibi Punkin",
+      "role" : "Greeter",
+      "desc" : "I'm your friendly neighborhood pumpkin and spoopy lover greeter extraordinaire!",
+      "image": ["images/bibi1.png"
+                ]  
+      },
+      {
+      "name" : "Scissor Hands",
+      "role" : "Dancer",
+      "desc" : "Cute little Miqo’te looking for some fun and craves all the attention. She loves Glamour and meeting and making new friends, dont be shy to come and say hello if you see me around I won’t bite ;)",
+      "image": ["images/scissor1.png"  
+                ]  
+      }
 ]
