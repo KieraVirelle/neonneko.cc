@@ -141,6 +141,20 @@
       "desc" : "I'm your friendly neighborhood pumpkin and spoopy lover greeter extraordinaire!",
       "image": ["images/bibi1.png"
                 ]  
+      },
+       {
+      "name" : "An'fa Reshan",
+      "role" : "Blackjack Dealer",
+      "desc" : "Blackjack addict. Being a dealer means I get to play more and lose less! ...Usually.",
+      "image": ["images/Anfa.png"
+                ]  
+      },
+      {
+      "name" : "Sour Cherry",
+      "role" : "GPOSER",
+      "desc" : "A storyteller behind the lens—capturing memories, good vibes, and club energy through immersive venue photography.",
+      "image": ["images/Sour1.png",
+                "images/Sour2.png"
+                ]  
       }
-      
 ]
