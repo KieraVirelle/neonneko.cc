@@ -121,14 +121,6 @@
       "image": ["images/Clout1.png"
                 ]  
     },
-        {
-      "name" : "Wade Howlett",
-      "role" : "Courtesan",
-      "desc" : "The Merc With a Mouth FFXIV style! Wade is witty and talkative, and loves letting others know just how he's feeling. He's not afraid to compliment, but he's not afraid to whine either. He's precious and has a big heart, but he's also hyper-aware of certain... things.",
-      "image": ["images/wade1.png",
-                "images/wade2.png"  
-                ]  
-      },
               {
       "name" : "Clove Adori",
       "role" : "GPOSER",
@@ -150,11 +142,5 @@
       "image": ["images/bibi1.png"
                 ]  
       },
-      {
-      "name" : "Scissor Hands",
-      "role" : "Dancer",
-      "desc" : "Cute little Miqo’te looking for some fun and craves all the attention. She loves Glamour and meeting and making new friends, dont be shy to come and say hello if you see me around I won’t bite ;)",
-      "image": ["images/scissor1.png"  
-                ]  
-      }
+      
 ]
