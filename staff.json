@@ -121,13 +121,7 @@
       "image": ["images/Clout1.png"
                 ]  
     },
-              {
-      "name" : "Clove Adori",
-      "role" : "GPOSER",
-      "desc" : "Whether I’m wagging my tail for a new gpose idea or just curling up for something soft and sweet, I bring playful energy to everything I create. Always excited to share my work and meet new friends along the way!",
-      "image": ["images/clove1.png"
-                ]  
-      },
+              
     {
       "name" : "Gils'justwana Hav'bun",
       "role" : "Courtesan",
@@ -156,5 +150,42 @@
       "image": ["images/Sour1.png",
                 "images/Sour2.png"
                 ]  
+      },
+      {
+      "name" : "Ymir Ayame",
+      "role" : "Ampurr",
+      "desc" : "Chasing horizons by day and good vibes by night. I live for adventure, unforgettable energy, and moments that make me feel alive.",
+      "image": ["images/Ymir1.png",
+                "images/Ymir2.png"
+                ]  
+      },
+      {
+      "name" : "Krad Ness",
+      "role" : "Dancer",
+      "desc" : "Sugar, spice and everything nice..... just gonna add some more spice. I can be extra sweet or super spicy. Hope you brought candy for this gremlin~",
+      "image": ["images/Krad1.png"
+                ]  
+      },
+      {
+      "name" : "Trina Miyuki",
+      "role" : "Dancer",
+      "desc" : "hey there i am Trina a fun silly cotton candy kitsune.  i love gpose and dancing and meeting new people i am also very friendly so feel free to say hi. and we can chat and dance the night away.",
+      "image": ["images/template.png"
+                ]  
+      },
+      {
+      "name" : "Judas Graves",
+      "role" : "Ampurr",
+      "desc" : "Just your local cowboy cat boyo who loves a good conversation. Will usually be spotted at any gamba table losing every bit of gil he's earned.",
+      "image": ["images/Judas1.png"
+                ]  
+      },
+      {
+      "name" : "Cota",
+      "role" : "GPOSER",
+      "desc" : "Hiii!~ Cota Bean, here! I've been a pose creator/gposer for almost 4 years [I think] and i'm always down to take photo's for people! I'm pretty carefree and don't like to stress over stuff, let's vibe!",
+      "image": ["images/template.png"
+                ]  
       }
 ]
+
