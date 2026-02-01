@@ -184,7 +184,15 @@
       "desc" : "Coming soon!",
       "image": ["images/template.png"
                 ]  
+      },
+      {
+      "name" : "Emilia Gainsborough",
+      "role" : "GPOSER",
+      "desc" : "Coming soon!",
+      "image": ["images/template.png"
+                ]  
       }
+
 
 ]
 
