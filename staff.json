@@ -163,6 +163,28 @@
       "desc" : "Just your local cowboy cat boyo who loves a good conversation. Will usually be spotted at any gamba table losing every bit of gil he's earned.",
       "image": ["images/Judas1.png"
                 ]  
-      }
+      },
+            {
+      "name" : "Vasha Akusker",
+      "role" : "GPOSER",
+      "desc" : "Coming soon!",
+      "image": ["images/template.png"
+                ]  
+      },
+      {
+      "name" : "Demi Human",
+      "role" : "GPOSER",
+      "desc" : "Coming soon!",
+      "image": ["images/template.png"
+                ]  
+      },
+      {
+      "name" : "Gigs Nakkan",
+      "role" : "GPOSER",
+      "desc" : "Coming soon!",
+      "image": ["images/template.png"
+                ]  
+      },
+
 ]
 
