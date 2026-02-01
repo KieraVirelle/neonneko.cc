@@ -55,12 +55,6 @@
     "images/Morri3.png"
              ]
   },
-  {
-    "name": "Scarleta Valkyrie",
-    "role": "Person of interest",
-    "desc": "Im a busy bunny that like to do things! If im not busy im not doing anything! Feeding the addiction of never having enough things to do",
-    "image": "images/Scarletta.png"
-  },
     {
     "name": "Alys Noxhart",
     "role": "Bartender",
@@ -114,21 +108,15 @@
                 "images/Celeste4.png"   
                 ]  
       },
-     {
+      
+    {
       "name" : "Clout Strife",
       "role" : "Ampurr",
       "desc" : "Your average everyday Bunboi who loves robot model kits",
       "image": ["images/Clout1.png"
                 ]  
     },
-              
-    {
-      "name" : "Gils'justwana Hav'bun",
-      "role" : "Courtesan",
-      "desc" : "Gils is a lithe Viera with an easy smile and a penchant for excitement. She adores talking to new people, hearing about their adventures, and perhaps taking them on a new one! It's a rough world out there, but you can lose yourself in her amethyst eyes and let your worries fall away. Or bring a friend and get a bun to share! Out of coffee? Let Gils keep you company this evening as she'll find a way to keep you awake!",
-      "image": ["images/gils1.png"
-              ]  
-      },
+      
       {
       "name" : "Bibi Punkin",
       "role" : "Greeter",
@@ -136,21 +124,15 @@
       "image": ["images/bibi1.png"
                 ]  
       },
-       {
+  
+     {
       "name" : "An'fa Reshan",
       "role" : "Blackjack Dealer",
       "desc" : "Blackjack addict. Being a dealer means I get to play more and lose less! ...Usually.",
       "image": ["images/Anfa.png"
                 ]  
       },
-      {
-      "name" : "Sour Cherry",
-      "role" : "GPOSER",
-      "desc" : "A storyteller behind the lens—capturing memories, good vibes, and club energy through immersive venue photography.",
-      "image": ["images/Sour1.png",
-                "images/Sour2.png"
-                ]  
-      },
+  
       {
       "name" : "Ymir Ayame",
       "role" : "Ampurr",
@@ -180,13 +162,6 @@
       "role" : "Ampurr",
       "desc" : "Just your local cowboy cat boyo who loves a good conversation. Will usually be spotted at any gamba table losing every bit of gil he's earned.",
       "image": ["images/Judas1.png"
-                ]  
-      },
-      {
-      "name" : "Cota",
-      "role" : "GPOSER",
-      "desc" : "Hiii!~ Cota Bean, here! I've been a pose creator/gposer for almost 4 years [I think] and i'm always down to take photo's for people! I'm pretty carefree and don't like to stress over stuff, let's vibe!",
-      "image": ["images/template.png"
                 ]  
       }
 ]
