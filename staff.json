@@ -132,15 +132,6 @@
       "image": ["images/Anfa.png"
                 ]  
       },
-  
-      {
-      "name" : "Ymir Ayame",
-      "role" : "Ampurr",
-      "desc" : "Chasing horizons by day and good vibes by night. I live for adventure, unforgettable energy, and moments that make me feel alive.",
-      "image": ["images/Ymir1.png",
-                "images/Ymir2.png"
-                ]  
-      },
       {
       "name" : "Krad Ness",
       "role" : "Dancer",
