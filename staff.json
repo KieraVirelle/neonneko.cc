@@ -67,6 +67,51 @@
         "image":  "images/alys1.png"
     },
     {
+        "name":  "DJ Goozin",
+        "role":  "Resident DJ",
+        "desc":  "High-energy beats and bass-bent grooves that keep the club lights pulsing. Tune into DJ Goozin on Twitch for the full Neon Neko set.",
+        "twitch": "https://twitch.tv/djgoozin",
+        "image":  [
+            "images/venue/DjGoozin1.png",
+            "images/venue/goozin1.png"
+        ]
+    },
+    {
+        "name":  "DJ Blaugrana",
+        "role":  "Resident DJ",
+        "desc":  "A master of melodic drops, DJ Blaugrana turns every dance floor into a neon soundscape. Live streams are always on point.",
+        "twitch": "https://twitch.tv/djblaugrana",
+        "image":  "images/venue/Blaugrana1.png"
+    },
+    {
+        "name":  "DJ Totobaby",
+        "role":  "Resident DJ",
+        "desc":  "Soft paws, hard rhythms, and an electric provenance — DJ Totobaby spins the sound of midnight in every set.",
+        "twitch": "https://twitch.tv/djtotobaby",
+        "image":  [
+            "images/venue/ToToBaby.png",
+            "images/venue/totobaby1.png",
+            "images/venue/totobaby2.png",
+            "images/venue/totobaby3.png"
+        ]
+    },
+    {
+        "name":  "DJ PeteBunny",
+        "role":  "Resident DJ",
+        "desc":  "Bass, bounce, and Twitch-ready energy. DJ PeteBunny keeps the club feeling lively both in-room and online.",
+        "twitch": "https://twitch.tv/djpetebunny",
+        "image":  "images/venue/DjPeteBunny.png"
+    },
+    {
+        "name":  "Ravian Shard",
+        "role":  "Greeter",
+        "desc":  "The first face you see when you step into Neon Neko — Ravian Shard welcomes every guest with warmth and style.",
+        "image":  [
+            "images/venue/Ravianshard1.png",
+            "images/venue/Ravianshard2.png"
+        ]
+    },
+    {
         "name":  "Wilah",
         "role":  "Dancer",
         "desc":  "Hi there! I\u0027m Wilah (pronounced Will- Ah). Just a purple cat girl looking for a good time and good conversation! I love gposing, reading, Deathrolling, yapping, hanging out with all you lovely people, and cat naps. Come find me out on the dancefloor and ask for a dance",

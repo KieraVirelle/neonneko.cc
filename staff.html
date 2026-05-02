@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -236,7 +236,7 @@ body.venue-background #main-nav::after {
     .staff-shell {
       position: relative;
       width: min(92vw, 1640px);
-      margin: 1.15rem auto 1.5rem;
+      margin: 0 auto 0.8rem;
       padding: clamp(1.35rem, 2.2vw, 2.2rem) clamp(1rem, 2vw, 2rem) 1.5rem;
       overflow: hidden;
       perspective: 1500px;
@@ -689,6 +689,15 @@ body.venue-background #main-nav::after {
       text-transform: uppercase;
     }
 
+    .profile-value a {
+      color: #8ffcff;
+      text-decoration: none;
+    }
+
+    .profile-value a:hover {
+      text-decoration: underline;
+    }
+
 @keyframes staffGlassSweep {
   0%, 28% { transform: translateX(0) skewX(-18deg); opacity: 0; }
   40% { opacity: 0.72; }
@@ -748,13 +757,13 @@ body.venue-background #main-nav::after {
 .nav-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 0.15rem;
 }
 
 .staff-intro-terminal {
   width: min(94vw, 1320px);
-  margin: 1.45rem auto 0;
-  padding: clamp(1rem, 2vw, 1.4rem);
+  margin: 0.15rem auto 0;
+  padding: clamp(0.7rem, 1.5vw, 0.95rem);
   border: 1px solid rgba(0,255,247,0.32);
   border-radius: 8px;
   background:
@@ -828,9 +837,7 @@ body.venue-background #main-nav::after {
     <a href="info.html"><span>Venue Details</span><i class="screen-sweep"></i></a>
     <a href="index.html#menu"><span>Menu</span><i class="screen-sweep"></i></a>
     <a href="staff.html#staff" class="active"><span>Team & Services</span><i class="screen-sweep"></i></a>
-    <a href="staff.html#resident-djs"><span>Resident DJs</span><i class="screen-sweep"></i></a>
     <a href="/vip/vip.html"><span>VIP Packages</span><i class="screen-sweep"></i></a>
-    <a href="index.html#affiliates"><span>Affiliates</span><i class="screen-sweep"></i></a>
   </nav>
  </div>
 
@@ -838,7 +845,7 @@ body.venue-background #main-nav::after {
 <section class="staff-intro-terminal" aria-label="Meet our staff">
   <div class="terminal-kicker">Neon Neko Crew Registry</div>
   <h1>Meet Our Staff</h1>
-  <p>These are the people who keep Neon Neko running every Saturday, from the bar and dance floor to games, photos, and guest energy. Cycle through the hologram panels to meet the team behind the night.</p>
+  <p>These are the people who keep Neon Neko running every Saturday, from the bar and dance floor to games, photos, resident DJs, and guest energy. Cycle through the hologram panels to meet the team behind the night.</p>
 </section>
 
 <aside class="staff-profile-panel" id="staffProfilePanel" aria-live="polite" aria-hidden="true">
@@ -856,6 +863,10 @@ body.venue-background #main-nav::after {
       <span class="profile-label">Status</span>
       <span class="profile-value">Active</span>
     </div>
+    <div class="profile-row" id="profileTwitchRow" style="display:none;">
+      <span class="profile-label">Twitch</span>
+      <span class="profile-value"><a id="profileTwitchLink" href="#" target="_blank" rel="noopener noreferrer"></a></span>
+    </div>
     <div class="profile-row">
       <span class="profile-label">Photos</span>
       <span class="profile-value" id="profilePhotos">--</span>
@@ -871,7 +882,6 @@ body.venue-background #main-nav::after {
     <button type="button" id="staffNext" aria-label="Next staff member">&#8250;</button>
   </div>
 </div>
-<div id="resident-djs" aria-hidden="true"></div>
   <script>
     function syncStaffNavActive() {
       const hash = window.location.hash || '#staff';
@@ -912,6 +922,8 @@ fetch('staff.json')
     const profileDesc = document.getElementById('profileDesc');
     const profileDept = document.getElementById('profileDept');
     const profilePhotos = document.getElementById('profilePhotos');
+    const profileTwitchRow = document.getElementById('profileTwitchRow');
+    const profileTwitchLink = document.getElementById('profileTwitchLink');
     const profilePanel = document.getElementById('staffProfilePanel');
     const profileClose = document.getElementById('profileClose');
     container.innerHTML = '';
@@ -925,6 +937,8 @@ fetch('staff.json')
       if (/manager/i.test(role)) return 'Management';
       if (/bartender/i.test(role)) return 'Bar';
       if (/dancer/i.test(role)) return 'Dance Floor';
+      if (/resident dj/i.test(role)) return 'Entertainment';
+      if (/greeter/i.test(role)) return 'Front of House';
       if (/gposer/i.test(role)) return 'Photo Team';
       if (/raffle|blackjack|dealer|games?/i.test(role)) return 'Games';
       return 'Crew';
@@ -975,6 +989,16 @@ fetch('staff.json')
       profileRole.textContent = staff.role;
       profileDesc.textContent = staff.desc || 'Profile data pending.';
       profileDept.textContent = getDepartment(staff);
+      if (staff.twitch) {
+        profileTwitchRow.style.display = 'grid';
+        const twitchHref = /^https?:\/\//i.test(staff.twitch) ? staff.twitch : `https://${staff.twitch}`;
+        profileTwitchLink.href = twitchHref;
+        profileTwitchLink.textContent = staff.twitch.replace(/^https?:\/\/(www\.)?/i, '');
+      } else {
+        profileTwitchRow.style.display = 'none';
+        profileTwitchLink.href = '#';
+        profileTwitchLink.textContent = '';
+      }
       profilePhotos.textContent = String(Math.min(images.length, 3)).padStart(2, '0');
     }
 

@@ -12,7 +12,7 @@
 .nav-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 #main-nav {
@@ -1615,7 +1615,7 @@ body.venue-background::before {
 body.venue-background .nav-wrapper {
   display: flex;
   justify-content: center;
-  padding: 1.4rem 1rem 0;
+  padding: 1rem 1rem 0;
   position: sticky;
   top: 0;
   z-index: 50;
@@ -2598,9 +2598,7 @@ window.addEventListener("hashchange", checkForTeamHash);
     <a href="info.html"><span>Venue Details</span><i class="screen-sweep"></i></a>
     <a href="#menu" onclick="showPage('menu', this, event)"><span>Menu</span><i class="screen-sweep"></i></a>
     <a href="staff.html#staff"><span>Team & Services</span><i class="screen-sweep"></i></a>
-    <a href="staff.html#resident-djs"><span>Resident DJs</span><i class="screen-sweep"></i></a>
     <a href="/vip/vip.html"><span>VIP Packages</span><i class="screen-sweep"></i></a>
-    <a href="#affiliates" onclick="showPage('affiliates', this, event)"><span>Affiliates</span><i class="screen-sweep"></i></a>
   </nav>
 </div>
 
@@ -2786,9 +2784,6 @@ window.addEventListener("hashchange", checkForTeamHash);
       <p class="terminal-note" id="drinkNote">Touch a drink profile to scan the next pour.</p>
     </aside>
   </div>
-</div>
-
-</div>
 </div>
 <div id="apply" class="page">
 <h2>Apply to Join the Neon Neko Team 💖</h2>
@@ -3090,7 +3085,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
   function showNavIfHash() {
     const nav = document.getElementById("main-nav");
-    const showNavPages = ['#menu', '#affiliates', '#apply', '#about', '#contact'];
+    const showNavPages = ['#menu', '#apply', '#about', '#contact'];
     if (nav && showNavPages.includes(window.location.hash)) {
       nav.classList.add("visible");
     } else if (nav) {
