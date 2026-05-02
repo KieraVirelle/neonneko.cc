@@ -6,6 +6,7 @@
   <title>VIP Packages | Neon Neko</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../terminal.css">
   <link rel="icon" type="image/x-icon" href="../nnfavicon.ico">
   <style>
     :root {
@@ -15,7 +16,7 @@
     }
 
     body {
-      background-color: var(--vip-bg);
+      background: transparent;
       color: var(--vip-gold);
       font-family: 'Outfit', sans-serif;
       margin: 0;
@@ -40,11 +41,10 @@
       max-width: 960px;
       margin: 3rem auto;
       padding: 2rem;
-      /* Keep the interior of the VIP block a solid black matching the site background */
-      background: var(--vip-bg);
-      border: 2px solid var(--vip-gold);
+      background: rgba(8, 10, 28, 0.85);
+      border: 1px solid rgba(255, 215, 0, 0.22);
       border-radius: 16px;
-      box-shadow: 0 0 20px var(--vip-gold);
+      box-shadow: 0 0 28px rgba(255, 215, 0, 0.12);
     }
 
     .vip-section h2 {
@@ -63,13 +63,12 @@
     }
 
     .vip-card {
-      /* Use a solid dark background for each VIP tier card to match the VIP section */
-      background: var(--vip-bg);
-      border: 1px solid var(--vip-gold);
+      background: rgba(8, 10, 28, 0.78);
+      border: 1px solid rgba(255, 215, 0, 0.18);
       border-radius: 12px;
       padding: 1.5rem;
       margin-bottom: 2rem;
-      box-shadow: 0 0 10px var(--vip-gold);
+      box-shadow: 0 0 16px rgba(255, 215, 0, 0.12);
     }
 
     .vip-card h3 {
@@ -102,16 +101,17 @@
 <body>
   <div class="nav-wrapper">
     <nav id="main-nav" class="visible">
-      <a href="../index.html#home">Home</a>
-      <a href="../info.html">Venue Details</a>
-      <a href="../staff.html">Team & Services</a>
-      <a href="../index.html#menu">Menu</a>
-      <a href="vip.html" class="active">💎 VIP Packages</a>
-      <a href="../index.html#apply">Apply Now!</a>
+      <a href="../index.html#home"><span>Home</span><i class="screen-sweep"></i></a>
+      <a href="../info.html"><span>Venue Details</span><i class="screen-sweep"></i></a>
+      <a href="../index.html#menu"><span>Menu</span><i class="screen-sweep"></i></a>
+      <a href="../staff.html#staff"><span>Team & Services</span><i class="screen-sweep"></i></a>
+      <a href="../staff.html#resident-djs"><span>Resident DJs</span><i class="screen-sweep"></i></a>
+      <a href="vip.html" class="active"><span>VIP Packages</span><i class="screen-sweep"></i></a>
+      <a href="../index.html#affiliates"><span>Affiliates</span><i class="screen-sweep"></i></a>
   </nav>
   </div>
 
-  <section class="vip-section">
+  <section class="vip-section spaceship-shell">
     <h2>💎 VIP Packages</h2>
     <p>Each tier grants access to all perks of the lower tiers. The higher you go, the more exclusive the experience.</p>
 
@@ -168,61 +168,5 @@
 </div>
 </section>
 <script src="vip.js"></script>
-</script>
-
-  <canvas id="neonCanvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:9999;"></canvas>
-
-<style>
-  body, html {
-    cursor: none !important;
-  }
-</style>
-<script>
-  
-const canvas = document.getElementById("neonCanvas");
-  const ctx = canvas.getContext("2d");
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
-  let trail = [];
-  const maxTrail = 20;
-
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    trail.push({ x: mouse.x, y: mouse.y });
-    if (trail.length > maxTrail) trail.shift();
-
-    ctx.beginPath();
-    for (let i = 0; i < trail.length - 1; i++) {
-      const p1 = trail[i];
-      const p2 = trail[i + 1];
-      ctx.moveTo(p1.x, p1.y);
-      ctx.lineTo(p2.x, p2.y);
-    }
-
-    /* Use a rich gold colour for the cursor trail */
-    ctx.strokeStyle = "rgba(255, 215, 0, 0.8)";
-    ctx.lineWidth = 3;
-    ctx.lineJoin = "round";
-    ctx.lineCap = "round";
-    ctx.shadowColor = "rgba(255, 215, 0, 1)";
-    ctx.shadowBlur = 15;
-    ctx.stroke();
-
-    requestAnimationFrame(draw);
-  }
-    document.addEventListener("mousemove", (e) => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-  });
-
-  window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  });
-  draw();
-</script>
 </body>
 </html>
