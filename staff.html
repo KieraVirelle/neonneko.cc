@@ -134,7 +134,7 @@ body.venue-background::before {
 body.venue-background .nav-wrapper {
   display: flex;
   justify-content: center;
-  padding: 0.85rem 1rem 0;
+  padding: 0.6rem 1rem 0;
   position: relative;
   top: auto;
   z-index: 50;
@@ -235,10 +235,10 @@ body.venue-background #main-nav::after {
 
     .staff-shell {
       position: relative;
-      width: min(92vw, 1640px);
-      margin: 0 auto 0.8rem;
-      padding: clamp(1.35rem, 2.2vw, 2.2rem) clamp(1rem, 2vw, 2rem) 1.5rem;
-      overflow: hidden;
+      width: min(98vw, 1980px);
+      margin: 0.15rem auto 0;
+      padding: clamp(0.35rem, 0.6vw, 0.7rem) clamp(0.9rem, 1.8vw, 1.6rem) 1rem;
+      overflow: visible;
       perspective: 1500px;
     }
 
@@ -247,9 +247,10 @@ body.venue-background #main-nav::after {
       display: grid;
       place-items: start center;
       width: 100%;
-      height: clamp(610px, 64vh, 720px);
+      height: clamp(560px, 64vh, 880px);
       margin: 0 auto;
-      padding-top: clamp(1.6rem, 3vh, 2.8rem);
+      padding-top: clamp(0.45rem, 1vw, 1rem);
+      padding-bottom: 0.75rem;
       box-sizing: border-box;
       overflow: visible;
       visibility: hidden;
@@ -294,7 +295,7 @@ body.venue-background #main-nav::after {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: clamp(270px, 23vw, 390px);
+      width: clamp(350px, 30vw, 560px);
       opacity: 0;
       pointer-events: auto;
       transform-style: preserve-3d;
@@ -394,7 +395,7 @@ body.venue-background #main-nav::after {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
+      object-position: 50% 14%;
       filter: saturate(1.08) contrast(1.04);
       opacity: 1;
       transition: opacity 240ms ease, filter 260ms ease;
@@ -462,7 +463,7 @@ body.venue-background #main-nav::after {
       opacity: 1;
       pointer-events: auto;
       filter: saturate(1.12) brightness(1);
-      transform: translate3d(0, 0, 170px) scale(1.08);
+      transform: translate3d(0, 0px, 300px) scale(1.18);
     }
 
     .card.carousel-active .card__inner {
@@ -488,11 +489,11 @@ body.venue-background #main-nav::after {
     }
 
     .card.carousel-prev {
-      transform: translate3d(clamp(-430px, -31vw, -290px), 32px, -60px) rotateY(34deg) scale(0.86);
+      transform: translate3d(clamp(-560px, -35vw, -360px), 30px, -120px) rotateY(36deg) scale(0.92);
     }
 
     .card.carousel-next {
-      transform: translate3d(clamp(290px, 31vw, 430px), 32px, -60px) rotateY(-34deg) scale(0.86);
+      transform: translate3d(clamp(360px, 35vw, 560px), 30px, -120px) rotateY(-36deg) scale(0.92);
     }
 
     .card.carousel-far-prev,
@@ -504,11 +505,11 @@ body.venue-background #main-nav::after {
     }
 
     .card.carousel-far-prev {
-      transform: translate3d(clamp(-650px, -45vw, -430px), 74px, -220px) rotateY(48deg) scale(0.66);
+      transform: translate3d(clamp(-760px, -46vw, -520px), 76px, -340px) rotateY(46deg) scale(0.76);
     }
 
     .card.carousel-far-next {
-      transform: translate3d(clamp(430px, 45vw, 650px), 74px, -220px) rotateY(-48deg) scale(0.66);
+      transform: translate3d(clamp(520px, 46vw, 760px), 76px, -340px) rotateY(-46deg) scale(0.76);
     }
 
     .staff-carousel-controls {
@@ -518,7 +519,7 @@ body.venue-background #main-nav::after {
       align-items: center;
       justify-content: center;
       gap: 1rem;
-      margin: 0.35rem auto 0;
+      margin: 0.15rem auto 0;
     }
 
     .staff-carousel-controls button {
@@ -711,26 +712,26 @@ body.venue-background #main-nav::after {
 
 @media (max-width: 900px) {
   .staff-shell {
-    width: min(96vw, 760px);
+    width: min(98vw, 980px);
     margin-top: 1rem;
-    padding: 1.15rem 0.75rem 1.35rem;
+    padding: 0.9rem 0.7rem 1rem;
   }
 
   .container {
-    height: clamp(560px, 66vh, 680px);
-    padding-top: 1.4rem;
+    height: clamp(500px, 60vh, 760px);
+    padding-top: 0;
   }
 
   .card {
-    width: clamp(230px, 62vw, 330px);
+    width: clamp(320px, 80vw, 560px);
   }
 
   .card.carousel-prev {
-    transform: translate3d(-38vw, 34px, -120px) rotateY(38deg) scale(0.72);
+    transform: translate3d(-52vw, 50px, -160px) rotateY(42deg) scale(0.92);
   }
 
   .card.carousel-next {
-    transform: translate3d(38vw, 34px, -120px) rotateY(-38deg) scale(0.72);
+    transform: translate3d(52vw, 50px, -160px) rotateY(-42deg) scale(0.92);
   }
 
   .card.carousel-far-prev,
@@ -758,12 +759,13 @@ body.venue-background #main-nav::after {
   display: flex;
   justify-content: center;
   padding-top: 0.15rem;
+  padding-bottom: 0.9rem;
 }
 
 .staff-intro-terminal {
   width: min(94vw, 1320px);
-  margin: 0.15rem auto 0;
-  padding: clamp(0.7rem, 1.5vw, 0.95rem);
+  margin: 0.75rem auto 0.55rem;
+  padding: clamp(0.7rem, 0.95vw, 0.92rem) clamp(0.9rem, 1.2vw, 1rem) clamp(0.62rem, 0.95vw, 0.78rem);
   border: 1px solid rgba(0,255,247,0.32);
   border-radius: 8px;
   background:
@@ -786,7 +788,7 @@ body.venue-background #main-nav::after {
   position: absolute;
   left: 12%;
   right: 12%;
-  bottom: -0.85rem;
+  bottom: -0.7rem;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(0,255,247,0.45), rgba(255,78,205,0.35), transparent);
   box-shadow: 0 0 14px rgba(0,255,247,0.24);
@@ -804,14 +806,14 @@ body.venue-background #main-nav::after {
 }
 
 .staff-intro-terminal h1 {
-  margin: 0.35rem 0 0.45rem;
+  margin: 0.18rem 0 0.22rem;
   color: transparent;
   background: linear-gradient(100deg, #ffffff, #83fffb, #ff7cda, #d5b6ff, #ffffff);
   background-size: 360% 360%;
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: clamp(2.2rem, 5vw, 4.7rem);
-  letter-spacing: 0.12em;
+  font-size: clamp(1.9rem, 4.2vw, 3.8rem);
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   text-shadow: 0 0 12px rgba(0,255,247,0.26), 0 0 28px rgba(255,78,205,0.16);
   animation: staffNameShift 4s ease-in-out infinite;
@@ -821,7 +823,7 @@ body.venue-background #main-nav::after {
   max-width: 850px;
   margin: 0 auto;
   color: rgba(232, 249, 255, 0.86);
-  line-height: 1.55;
+  line-height: 1.45;
 }
 
 
@@ -836,7 +838,7 @@ body.venue-background #main-nav::after {
     <a href="index.html#home"><span>Home</span><i class="screen-sweep"></i></a>
     <a href="info.html"><span>Venue Details</span><i class="screen-sweep"></i></a>
     <a href="index.html#menu"><span>Menu</span><i class="screen-sweep"></i></a>
-    <a href="staff.html#staff" class="active"><span>Team & Services</span><i class="screen-sweep"></i></a>
+    <a href="staff.html" class="active"><span>Team & Services</span><i class="screen-sweep"></i></a>
     <a href="/vip/vip.html"><span>VIP Packages</span><i class="screen-sweep"></i></a>
   </nav>
  </div>
@@ -884,14 +886,18 @@ body.venue-background #main-nav::after {
 </div>
   <script>
     function syncStaffNavActive() {
-      const hash = window.location.hash || '#staff';
       document.querySelectorAll('#main-nav a').forEach(link => link.classList.remove('active'));
-      const activeLink = document.querySelector(`#main-nav a[href$="${hash}"]`);
+      const activeLink = document.querySelector('#main-nav a[href$="staff.html"]');
       if (activeLink) activeLink.classList.add('active');
     }
 
     window.addEventListener('load', syncStaffNavActive);
     window.addEventListener('hashchange', syncStaffNavActive);
+
+    if (window.location.hash === '#staff') {
+      history.replaceState(null, '', `${window.location.pathname}${window.location.search}`);
+      window.scrollTo(0, 0);
+    }
 
     const cards = document.querySelectorAll(".card");
 
@@ -928,8 +934,19 @@ fetch('staff.json')
     const profileClose = document.getElementById('profileClose');
     container.innerHTML = '';
 
+    const STAFF_STATE_KEY = 'neon-neko-staff-active-index';
     let activeStaffIndex = 0;
     let panelCycleTimer = null;
+
+    function getInitialStaffIndex(length) {
+      const saved = Number.parseInt(window.sessionStorage.getItem(STAFF_STATE_KEY) ?? '', 10);
+      if (Number.isFinite(saved) && saved >= 0 && saved < length) return saved;
+      return Math.min(Math.max(Math.floor(length / 2), 0), length - 1);
+    }
+
+    function persistStaffIndex() {
+      window.sessionStorage.setItem(STAFF_STATE_KEY, String(activeStaffIndex));
+    }
 
     function getDepartment(staff) {
       const role = staff.role || '';
@@ -971,6 +988,7 @@ fetch('staff.json')
         status.textContent = `${String(activeStaffIndex + 1).padStart(2, '0')} / ${String(cards.length).padStart(2, '0')} // ${activeStaff.name}`;
       }
 
+      persistStaffIndex();
       updateProfilePanel();
     }
 
@@ -1034,13 +1052,41 @@ fetch('staff.json')
       } else {
         updateProfilePanel();
       }
+      persistStaffIndex();
       window.requestAnimationFrame(openProfilePanel);
     }
 
     function getPanelImagePosition(imagePath, staffName) {
       const path = String(imagePath || '').toLowerCase();
+      const cropMap = {
+        'Kiera "KiKi" Virelle': '50% 16%',
+        'Nilah Valoryn': '50% 16%',
+        'Yishi Lalni': '50% 14%',
+        'Shinobu Hagane': '50% 14%',
+        'Kisne': '50% 18%',
+        'Solas Kurage': '50% 18%',
+        'Alys Noxhart': '50% 14%',
+        'DJ Goozin': '50% 15%',
+        'DJ Blaugrana': '50% 12%',
+        'DJ Totobaby': '50% 14%',
+        'DJ PeteBunny': '50% 14%',
+        'Ravian Shard': '50% 16%',
+        'Wilah': '50% 12%',
+        'Celeste Chantra': '50% 14%',
+        'Lufas Maphaahl': '50% 12%',
+        'Moxie Riot': '50% 14%',
+        'Sonja Golmarr': '50% 14%',
+        'Bao Buns': '50% 16%',
+        'Vasha Akusker': '50% 16%',
+        'Demi Human': '50% 18%',
+        'Emi Faeheart': '50% 18%',
+        'Izumi': '50% 18%',
+        'Clout Strife': '50% 14%',
+        'Judas Graves': '50% 14%',
+      };
       if (staffName === 'Alys Noxhart' && path.includes('alys2')) return '32% center';
       if (staffName === 'Alys Noxhart' && path.includes('alys1')) return '74% center';
+      if (cropMap[staffName]) return cropMap[staffName];
       return '';
     }
 
@@ -1069,6 +1115,7 @@ fetch('staff.json')
     function renderStaffCards() {
       container.innerHTML = '';
       if (panelCycleTimer) window.clearInterval(panelCycleTimer);
+      activeStaffIndex = getInitialStaffIndex(staffList.length);
 
       staffList.forEach((staff, index) => {
       const card = document.createElement('div');
@@ -1128,6 +1175,27 @@ fetch('staff.json')
     document.getElementById('staffNext')?.addEventListener('click', () => moveHoloCarousel(1));
     profileClose?.addEventListener('click', closeProfilePanel);
     renderStaffCards();
+
+    function restoreSavedStaffView() {
+      activeStaffIndex = getInitialStaffIndex(staffList.length);
+      closeProfilePanel();
+      renderStaffCards();
+      container.style.visibility = 'visible';
+    }
+
+    window.addEventListener('pageshow', () => {
+      window.requestAnimationFrame(restoreSavedStaffView);
+    });
+
+    window.addEventListener('focus', () => {
+      window.requestAnimationFrame(restoreSavedStaffView);
+    });
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') {
+        window.requestAnimationFrame(restoreSavedStaffView);
+      }
+    });
 
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') closeProfilePanel();
