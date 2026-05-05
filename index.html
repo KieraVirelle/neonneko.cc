@@ -1278,7 +1278,7 @@ body.home-view .shooting-star {
 /* Lightweight ship-systems launch sequence */
 body.system-launching #home svg {
   animation-play-state: paused;
-  opacity: 0.32;
+  opacity: 0.18;
   transform: translate3d(0, -3px, 0) scale(0.99);
   transition: opacity 240ms ease, transform 240ms ease;
 }
@@ -1320,9 +1320,9 @@ body.system-launching #home svg {
   z-index: 0;
   opacity: 0;
   background:
-    radial-gradient(ellipse at 50% 45%, rgba(255,78,205,0.28), transparent 18rem),
-    radial-gradient(ellipse at 50% 52%, rgba(0,255,247,0.2), transparent 24rem),
-    linear-gradient(90deg, transparent 0 45%, rgba(0,255,247,0.16) 48.5%, rgba(255,255,255,0.16) 50%, rgba(255,78,205,0.16) 51.5%, transparent 55%);
+    radial-gradient(ellipse at 50% 45%, rgba(255,78,205,0.22), transparent 18rem),
+    radial-gradient(ellipse at 50% 52%, rgba(0,255,247,0.16), transparent 24rem),
+    linear-gradient(90deg, transparent 0 45%, rgba(0,255,247,0.12) 48.5%, rgba(200,255,255,0.08) 50%, rgba(255,78,205,0.12) 51.5%, transparent 55%);
   transform: scale(0.96);
 }
 
@@ -1336,7 +1336,7 @@ body.system-launching #home svg {
   position: relative;
   flex: 1 1 50%;
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.035), transparent 18%, rgba(0,0,0,0.42) 100%),
+    linear-gradient(180deg, rgba(0,255,247,0.03), transparent 18%, rgba(0,0,0,0.42) 100%),
     linear-gradient(90deg, rgba(0,0,0,0.96), rgba(3, 6, 17, 0.98));
   box-shadow: inset 0 0 42px rgba(0,0,0,0.82);
 }
@@ -1404,7 +1404,7 @@ body.system-launching #home svg {
 }
 
 .launch-message .launch-title span {
-  color: #eaffff;
+  color: #c9fffd;
 }
 
 .launch-message .launch-title span:nth-child(3),
@@ -1419,8 +1419,8 @@ body.system-launching #home svg {
   height: 2px;
   margin-top: 1rem;
   overflow: hidden;
-  background: rgba(255,255,255,0.12);
-  box-shadow: 0 0 10px rgba(0,255,247,0.22);
+  background: rgba(0,255,247,0.1);
+  box-shadow: 0 0 10px rgba(0,255,247,0.22), 0 0 10px rgba(255,78,205,0.08);
 }
 
 .launch-message .launch-loader::before {
@@ -1503,7 +1503,7 @@ body.system-launching #home svg {
 
 @keyframes systemFlicker {
   0%, 8%, 13% { opacity: 0; }
-  5%, 10%, 16%, 100% { opacity: 1; visibility: visible; }
+  5%, 10%, 16%, 100% { opacity: 0.96; visibility: visible; }
 }
 
 @keyframes systemGrid {
